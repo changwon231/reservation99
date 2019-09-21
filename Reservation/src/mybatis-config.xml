@@ -24,9 +24,11 @@
 	
 	<!-- 3. typeAliases : 사용자가 정의한 vo 클래스를 등록-->
 	<typeAliases>
-		<typeAlias type="book.vo.Book" alias="Book"/>
-		<typeAlias type="book.vo.Manager" alias="Manager"/>
-		<typeAlias type="book.vo.Code" alias="Code"/>
+		<typeAlias type="reservation.vo.Reservation" alias="reservation"/>
+		<typeAlias type="reservation.vo.Admin" alias="admin"/>
+		<typeAlias type="reservation.vo.Customer" alias="customer"/>
+		<typeAlias type="reservation.vo.Facility" alias="facility"/>
+		<typeAlias type="reservation.vo.Code" alias="code"/>
 	</typeAliases>
 	
 	<!-- 4. environments : DB 접속 환경 설정 -->
@@ -53,8 +55,10 @@
 	
 	<!-- 5. mappers -->
 	<mappers>
-		<mapper resource="book/mapper/BookMapper.xml"/>
-		<mapper resource="book/mapper/CodeMapper.xml"/>
-		<mapper resource="book/mapper/ManagerMapper.xml"/>
+		<mapper resource="reservation/mapper/ReservationMapper.xml"/>
+		<mapper resource="reservation/mapper/CodeMapper.xml"/>
+		<mapper resource="reservation/mapper/FacilityMapper.xml"/>
+		<mapper resource="reservation/mapper/CustomerMapper.xml"/>
+		<mapper resource="reservation/mapper/AdminMapper.xml"/>
 	</mappers>
 </configuration>
