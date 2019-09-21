@@ -19,7 +19,7 @@
 	
 	<!-- 2. settings : 테이블의 언더스코어(밑줄) 을 자바의 낙타표기법ㅇ로 전환 설정-->
 	<settings>
-		<setting name="mapUnderScoreToCamelCase" value="true"/>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
 	</settings>
 	
 	<!-- 3. typeAliases : 사용자가 정의한 vo 클래스를 등록-->
